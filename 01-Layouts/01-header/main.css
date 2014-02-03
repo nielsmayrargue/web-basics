@@ -3,3 +3,17 @@
   width: 720px;
 	font-family: 'Open Sans', sans-serif;
 }
+
+header h1 {
+	text-align:center
+}
+
+header ul {
+	list-style-type:none;
+	text-align: center;
+}
+
+header li {
+	display:inline;
+	margin: 35px;
+}
