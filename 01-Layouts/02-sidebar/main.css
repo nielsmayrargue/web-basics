@@ -2,5 +2,34 @@
   margin: 0 auto;  
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
+	padding:0;
 }
 
+div header {
+	border-bottom: 1px solid;
+}
+
+nav {
+	float: left;
+	width:97px;
+	margin-left: 0px;
+	}
+
+nav ul {
+		list-style-type:none;
+		margin-left: 0px;
+		padding:0;
+	}
+
+.content {
+	float: right;
+	width:700px;
+	border-left: 1px solid;
+	padding-left: 40px;
+}
+
+footer {
+	clear: both;
+	border-top: 1px solid;
+	padding: 30px;
+}
