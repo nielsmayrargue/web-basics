@@ -46,3 +46,10 @@ h1{
 	padding: 100px;
 }
 
+.btn.btn-warning {
+margin: 0 auto;
+}
+
+#center-button {
+	text-align: center;
+}
