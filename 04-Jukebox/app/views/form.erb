@@ -1,4 +1,14 @@
-<form action="/" method="post">
-  <!--implement the object-related form for an album	-->
+<h3>Add your new album, sir:</h3>
+<br>
+<% @album.name.nil? ? action = "/" : action = "/#{@id}" %>
+<form  method="post" action="<%= action %>" >
+  <label for="name">Name:</label>
+  	<input name="album[name]" type="text" value="<%= @album.name %>">
+  <p><label for="artist">Artist:</label>
+   <input name="album[artist]" type="text" value="<%= @album.artist %>"></p>
+  <p><label for="year">Year:</label>
+    <input name="album[year]" type="number" value="<%= @album.year %>"></p>
+  <input type="submit" value="CREATE">
 </form>
+<br>
 <a href=/>Back to jukebox list</a>
