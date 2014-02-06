@@ -35,6 +35,7 @@ get '/:id/edit' do
 end
 
 post '/:id' do
-  $albums[params[:id].to_i] = Album.new(params[:album])
+	@id = params[:id].to_i
+	$albums[@id].update(params[:album])
   erb :index
 end
